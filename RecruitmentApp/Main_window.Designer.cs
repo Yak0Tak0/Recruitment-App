@@ -45,9 +45,9 @@
             this.import_btn = new Guna.UI2.WinForms.Guna2Button();
             this.export_btn = new Guna.UI2.WinForms.Guna2Button();
             this.middle_panel = new System.Windows.Forms.Panel();
-            this.uC_Export = new RecruitmentApp.UC_Export();
-            this.uC_Import = new RecruitmentApp.UC_Import();
-            this.uC_Auto_Update = new RecruitmentApp.UC_Auto_Update();
+            this.uC_Export = new RecruitmentApp.UC_Export(new RecruitmentDbContext());
+            this.uC_Import = new RecruitmentApp.UC_Import(new RecruitmentDbContext());
+            this.uC_Auto_Update = new RecruitmentApp.UC_Auto_Update(new RecruitmentDbContext());
             this.uC_Logs = new RecruitmentApp.UC_Logs();
             this.blank_panel = new System.Windows.Forms.Panel();
             this.top_panel.SuspendLayout();

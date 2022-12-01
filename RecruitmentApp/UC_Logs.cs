@@ -15,6 +15,9 @@ namespace RecruitmentApp
         public UC_Logs()
         {
             InitializeComponent();
+            
         }
+
+
     }
 }
